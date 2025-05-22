@@ -3,6 +3,7 @@ import {
 
 } from "react-router";
 import MainLayout from "../layout/MainLayout";
+import Home from "../pages/Home";
 
 
 
@@ -12,7 +13,8 @@ const routes = createBrowserRouter([
     element: <MainLayout/>,
     children:[
         {
-            
+            path:"/",
+            element:<Home />
         }
     ]
   },
